@@ -1,17 +1,21 @@
-function square(side) {
-    for(var i = 0; i < 4; i++){
-       forward(side);
-       right(90);
+var min = -getWidth(400)/2;
+var max =  getHeight(400)/2;
+
+console.log (turtle.pos);
+
+function randomSquares(sideLength, numSquares){
+    for(var i = 0; i < numSquares; i++)
+    {
+        var xCoord = random(min, max);
+        var yCoord = random(min, max);
+        goto(xCoord, yCoord);
+        square(sideLength);
     }
- }
- function main()
-{
-    pendown();
-    var min = -getWidth()/2;
-    var max = getWidth()/2;
-    goto(-250,250);
-    console.log(tutle.pos)
-    Left(45)
-    forward(705)
-    
+
 }
+
+    //raise num to the power of exp
+    Math.pow(num, exp);
+    //take the square root of num
+    Math.sqrt(num)
+    
